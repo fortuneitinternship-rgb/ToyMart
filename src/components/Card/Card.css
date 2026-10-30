@@ -1,0 +1,19 @@
+.tm-card {
+  padding: 20px;
+  border: 1px solid #e1e5eb;
+  border-radius: 10px;
+  background: white;
+  transition: 0.2s;
+}
+
+.tm-card:hover {
+  transform: translateY(-3px);
+}
+
+.tm-card h3 {
+  color: #252a34;
+}
+
+.tm-card p {
+  color: #687386;
+}

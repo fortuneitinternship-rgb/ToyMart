@@ -1,13 +1,44 @@
+/* Task 4: Global Theme */
+:root {
+  --tm-primary: #f20c61;
+  --tm-primary-hover: #d90050;
+  --tm-text: #252a34;
+  --tm-muted: #687386;
+  --tm-border: #e1e5eb;
+  --tm-background: #f7f8fa;
+  --tm-white: #ffffff;
+
+  --tm-radius: 10px;
+  --tm-container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  min-width: 320px;
+  color: var(--tm-text);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
+img {
+  max-width: 100%;
 }
 
-main {
-  min-height: 70vh;
+.tm-container {
+  width: 92%;
+  max-width: var(--tm-container);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .tm-container {
+    width: 94%;
+  }
 }

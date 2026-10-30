@@ -1,0 +1,380 @@
+
+/* Main navbar */
+.tm-navbar {
+  width: 100%;
+  background-color: #f5f6f7;
+  border-bottom: 1px solid #d5d8dc;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar container */
+.tm-nav-inner {
+  width: 94%;
+  max-width: 1440px;
+  min-height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* ToyMart logo */
+.tm-logo {
+  color: #202328;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tm-logo:hover {
+  color: #555b62;
+}
+
+/* Navigation links */
+.tm-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.tm-nav-links a {
+  color: #30343a;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.tm-nav-links a:hover {
+  color: #858b93;
+}
+
+/* Wishlist, cart and profile icons */
+.tm-nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.tm-nav-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #30343a;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.tm-nav-icons a:hover {
+  color: #858b93;
+}
+
+/* Login link */
+.tm-login {
+  color: #202328 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .tm-nav-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 0;
+    gap: 16px;
+  }
+
+  .tm-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .tm-nav-icons {
+    gap: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .tm-nav-inner {
+    width: 92%;
+  }
+
+  .tm-logo {
+    font-size: 23px;
+  }
+
+  .tm-nav-links {
+    gap: 12px 16px;
+  }
+
+  .tm-nav-links a {
+    font-size: 12px;
+  }
+
+  .tm-nav-icons {
+    gap: 12px;
+  }
+
+  .tm-nav-icons a {
+    font-size: 18px;
+  }
+}
+
+
+/* Search bar row */
+.tm-search-wrap {
+  width: 100%;
+  padding: 10px 6.2% 14px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Search bar container */
+.tm-search {
+  width: 100%;
+  max-width: 1440px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #dce3ec;
+  border-radius: 25px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Search icon on the left */
+.tm-search > .bi-search {
+  margin-left: 16px;
+  color: #536b8b;
+  font-size: 17px;
+}
+
+/* Search input */
+.tm-search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #17356e;
+  font-size: 13px;
+}
+
+.tm-search input::placeholder {
+  color: #8290a5;
+}
+
+/* Pink search button */
+.tm-search button {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #f20c61;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tm-search button:hover {
+  background: #d90050;
+}
+
+/* Mobile search bar */
+@media (max-width: 576px) {
+  .tm-search-wrap {
+    padding: 10px 4%;
+  }
+
+  .tm-search {
+    height: 40px;
+  }
+
+  .tm-search button {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/*  Responsive Navbar */
+@media (max-width: 1000px) {
+  .tm-nav-inner {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .tm-nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .tm-nav-icons {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tm-nav-inner {
+    width: 92%;
+  }
+
+  .tm-logo {
+    font-size: 23px;
+  }
+
+  .tm-nav-links a {
+    font-size: 12px;
+  }
+
+  .tm-search-wrap {
+    padding: 10px 4%;
+  }
+
+  .tm-search {
+    width: 100%;
+  }
+}
+
+
+/* ToyMart colorful navbar  */
+.tm-navbar {
+  background: #fff7fb;
+  border-bottom: 2px solid #ffe0ec;
+}
+
+.tm-logo {
+  color: #f20c61;
+  transition: color 0.2s ease;
+}
+
+.tm-logo:hover {
+  color: #bd0750;
+}
+
+.tm-nav-links a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tm-nav-links a:hover {
+  color: #f20c61;
+  background: #ffe4ef;
+}
+
+.tm-nav-icons a:hover {
+  color: #f20c61;
+}
+
+.tm-nav-icons .tm-login {
+  padding: 9px 18px;
+  border-radius: 22px;
+  background: #f20c61;
+  color: #ffffff !important;
+}
+
+.tm-nav-icons .tm-login:hover {
+  background: #c9004d;
+  color: #ffffff !important;
+}
+
+.tm-search-wrap {
+  background: #fffafd;
+}
+
+.tm-search {
+  border-color: #f6c5d8;
+}
+
+.tm-search button {
+  background: #f20c61;
+}
+
+.tm-search button:hover {
+  background: #c9004d;
+}
+
+
+/* Mobile navbar */
+@media (max-width: 700px) {
+  .tm-nav-inner {
+    width: 94%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .tm-logo {
+    font-size: 23px;
+  }
+
+  .tm-nav-icons {
+    margin-left: auto;
+    gap: 12px;
+  }
+
+  .tm-nav-icons a {
+    font-size: 18px;
+  }
+
+  .tm-nav-icons .tm-login {
+    padding: 7px 13px;
+    font-size: 12px !important;
+  }
+
+  .tm-nav-links {
+    order: 3;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 0 5px;
+    scrollbar-width: none;
+  }
+
+  .tm-nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tm-nav-links a {
+    flex-shrink: 0;
+    font-size: 13px;
+  }
+
+  .tm-search-wrap {
+    padding: 9px 4%;
+  }
+
+  .tm-search {
+    height: 42px;
+  }
+}
+
+
+

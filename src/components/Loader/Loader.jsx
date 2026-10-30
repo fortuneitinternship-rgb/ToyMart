@@ -1,14 +1,10 @@
-function Loader() {
+import "./Loader.css";
+
+function Loader({ message = "Loading..." }) {
   return (
-    <div className="d-flex justify-content-center align-items-center p-5">
-      <div
-        className="spinner-border text-primary"
-        role="status"
-      >
-        <span className="visually-hidden">
-          Loading...
-        </span>
-      </div>
+    <div className="tm-loader" role="status" aria-live="polite">
+      <div className="tm-spinner"></div>
+      <p>{message}</p>
     </div>
   );
 }

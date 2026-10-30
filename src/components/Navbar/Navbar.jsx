@@ -1,68 +1,75 @@
+
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-white border-bottom">
-      <div className="container">
+    <>
+      <nav className="tm-navbar">
+        <div className="tm-nav-inner">
+          <Link to="/" className="tm-logo">
+            ToyMart
+          </Link>
 
-        <Link className="navbar-brand fw-bold" to="/">
-          E-Commerce
-        </Link>
-
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarContent">
-
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/products">
-                Products
-              </Link>
-            </li>
-
-          </ul>
-
-          <form className="d-flex me-3">
-            <input
-              className="form-control"
-              type="search"
-              placeholder="Search products..."
-            />
-          </form>
-
-          <div className="d-flex gap-3">
-
-            <Link to="/wishlist" className="text-dark fs-5">
-              <i className="bi bi-heart"></i>
-            </Link>
-
-            <Link to="/cart" className="text-dark fs-5">
-              <i className="bi bi-cart"></i>
-            </Link>
-
-            <Link to="/login" className="text-dark fs-5">
-              <i className="bi bi-person"></i>
-            </Link>
-
+          <div className="tm-nav-links">
+            <Link to="/">Home</Link>
+            <Link to="/products">Toys</Link>
+            <Link to="/categories">Categories</Link>
+            <Link to="/smart-toy-finder">Smart Toy Finder</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
+          <div className="tm-nav-icons">
+            <Link to="/wishlist" aria-label="Wishlist">
+              <i className="bi bi-heart" />
+            </Link>
+            <Link to="/cart" aria-label="Shopping cart">
+              <i className="bi bi-cart3" />
+            </Link>
+            <Link to="/profile" aria-label="Profile">
+              <i className="bi bi-person" />
+            </Link>
+            <Link to="/login" className="tm-login">
+              Login
+            </Link>
+          </div>
         </div>
+      </nav>
+
+      
+      {/* Search Bar */}
+      <div className="tm-search-wrap">
+        <form
+          className="tm-search"
+          onSubmit={(event) => {
+            event.preventDefault();
+
+            const formData = new FormData(event.currentTarget);
+            const query = formData.get("search")?.toString().trim();
+
+            if (query) {
+              window.location.href =
+                "/products?search=" + encodeURIComponent(query);
+            }
+          }}
+        >
+          <i className="bi bi-search tm-search-icon" />
+
+          <input
+            name="search"
+            type="search"
+            placeholder="Search toys, brands and more..."
+            aria-label="Search toys, brands and categories"
+          />
+
+          <button type="submit" aria-label="Search">
+            <i className="bi bi-search" />
+          </button>
+        </form>
       </div>
-    </nav>
+
+    </>
   );
 }
 

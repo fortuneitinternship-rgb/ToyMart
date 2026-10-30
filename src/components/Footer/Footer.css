@@ -1,0 +1,75 @@
+
+/* Footer responsive design */
+@media (max-width: 700px) {
+  footer {
+    width: 100%;
+    padding: 25px 16px !important;
+    margin-top: 25px !important;
+    box-sizing: border-box;
+  }
+
+  footer .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  footer .row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+    margin: 0;
+  }
+
+  footer .row > div {
+    width: 100%;
+    padding: 0;
+  }
+
+  footer h5,
+  footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  footer li {
+    margin-bottom: 7px;
+  }
+
+  footer hr {
+    margin: 20px 0 12px;
+  }
+
+  footer .text-center {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  footer {
+    padding: 22px 12px !important;
+  }
+
+  footer h5,
+  footer h4 {
+    font-size: 14px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 12px;
+  }
+}

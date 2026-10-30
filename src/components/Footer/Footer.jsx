@@ -1,6 +1,8 @@
+import "./Footer.css";
 function Footer() {
   return (
     <footer className="bg-dark text-white mt-5">
+      <footer className="tm-footer bg-dark text-white "></footer>
       <div className="container py-5">
 
         <div className="row">

@@ -1,0 +1,106 @@
+
+.tm-page {
+  min-height: 55vh;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+.tm-page-banner {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fff4cf, #ffe5f0);
+}
+
+.tm-page-banner > span {
+  color: #f20c61;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.tm-page-banner h1 {
+  margin: 12px 0;
+  color: #203e7b;
+  font-size: 38px;
+}
+
+.tm-page-banner p {
+  color: #53627a;
+}
+
+.tm-profile-card {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 500px;
+  margin: 32px auto;
+  padding: 30px;
+  border: 1px solid #f1dce5;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(40, 40, 60, 0.07);
+}
+
+.tm-profile-avatar {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #ffe3ed;
+  color: #f20c61;
+  font-size: 36px;
+}
+
+.tm-profile-card h2 {
+  color: #203e7b;
+}
+
+.tm-profile-card p {
+  color: #687386;
+  line-height: 1.6;
+}
+
+.tm-page-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 24px;
+  border-radius: 25px;
+  background: #f20c61;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tm-page-button:hover {
+  background: #c9004d;
+}
+
+.tm-profile-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.tm-profile-links a {
+  color: #203e7b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tm-profile-links a:hover {
+  color: #f20c61;
+}
+
+@media (max-width: 480px) {
+  .tm-page-banner h1 {
+    font-size: 30px;
+  }
+
+  .tm-profile-card {
+    padding: 22px;
+  }
+}

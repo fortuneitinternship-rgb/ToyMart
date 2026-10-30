@@ -1,0 +1,101 @@
+
+.tm-page {
+  min-height: 55vh;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+.tm-page-banner {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fff4cf, #ffe5f0);
+}
+
+.tm-page-banner > span {
+  color: #f20c61;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.tm-page-banner h1 {
+  margin: 12px 0;
+  color: #203e7b;
+  font-size: 38px;
+}
+
+.tm-page-banner p {
+  color: #53627a;
+}
+
+.tm-finder-card {
+  width: 90%;
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 28px;
+  border: 1px solid #f1dce5;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(40, 40, 60, 0.07);
+}
+
+.tm-finder-card h2 {
+  margin-top: 0;
+  color: #203e7b;
+}
+
+.tm-finder-card label {
+  display: block;
+  margin: 16px 0 7px;
+  color: #30343a;
+  font-weight: 600;
+}
+
+.tm-finder-card input,
+.tm-finder-card textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce1e8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.tm-finder-card input {
+  min-height: 44px;
+}
+
+.tm-finder-card textarea {
+  resize: vertical;
+}
+
+.tm-page-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #f20c61;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tm-page-button:hover {
+  background: #c9004d;
+}
+
+.tm-success {
+  color: #16834a;
+}
+
+@media (max-width: 480px) {
+  .tm-page-banner h1 {
+    font-size: 30px;
+  }
+
+  .tm-finder-card {
+    padding: 20px;
+  }
+}
